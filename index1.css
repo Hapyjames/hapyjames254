@@ -1,0 +1,77 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full background image styling */
+.about-container {
+    background-image: url('2.png'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content box styling */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff; /* White text to contrast against the dark background */
+    max-width: 800px;
+    max-height: 1000px
+}
+
+/* Heading styles */
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ff7200; /* Eye-catching orange for subheadings */
+    font-style: italic;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Add hover effects to h2 (subtopics) */
+h2:hover {
+    text-decoration: underline;
+    color: #e66000;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-box {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
